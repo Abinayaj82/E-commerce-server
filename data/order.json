@@ -1,0 +1,31 @@
+{
+"shippingAddress": {
+       "address":"mount road",
+       "city":"chennai",
+       "state":"tamilnadu",
+       "pinCode":"600409",
+       "country":"india",
+       "phoneNumber":"123456789"
+    },
+   
+   " orderItems": [
+        {
+            "name":"Onion",
+            "product":"693a6ef955e75d226d3be35b",
+            "quantity": "1",
+            "price": "100",
+            "image":"https://www.example.com/images/onion1.jpg"
+        }
+    ],
+   
+   "paymentInfo": {
+    "id":"payment-id",
+    "status":"paid"
+   },
+    
+    "itemPrice":"100",
+    "taxPrice":"20",
+    "shippingPrice":"10",
+   " totalPrice":"130"
+}
+

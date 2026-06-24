@@ -1,0 +1,80 @@
+[
+    {
+       "name" : "Onion",
+         "category" : "Vegetables",
+            "price" : 30.0,
+            "image" : [
+               "https://www.example.com/images/onion1.jpg",
+               "https://www.example.com/images/onion2.jpg"
+            ],
+            "description" : "Fresh Onions from the farm",
+            "stock" : 100,
+            "unit" : "1kg"
+
+    },
+     {
+       "name" : "Tomato",
+         "category" : "Vegetables",
+            "price" : 40.0,
+            "image" : [
+               "https://www.example.com/images/onion1.jpg",
+               "https://www.example.com/images/onion2.jpg"
+            ],
+            "description" : "Fresh Onions from the farm",
+            "stock" : 100,
+            "unit" : "1kg"
+
+    },
+    {
+       "name" : "Thoor dal",
+         "category" : "Groceries",
+            "price" : 190.0,
+            "image" : [
+               "https://www.example.com/images/onion1.jpg",
+               "https://www.example.com/images/onion2.jpg"
+            ],
+            "description" : "Fresh groceries ",
+            "stock" : 300,
+            "unit" : "1kg"
+
+    },
+     {
+       "name" : "Apple",
+         "category" : "Fruits",
+            "price" : 40.0,
+            "image" : [
+               "https://www.example.com/images/onion1.jpg",
+               "https://www.example.com/images/onion2.jpg"
+            ],
+            "description" : "Fresh fruits from the farm",
+            "stock" : 50,
+            "unit" : "100g"
+
+    },
+     {
+       "name" : "Banana",
+         "category" : "Fruits",
+            "price" : 70.0,
+            "image" : [
+               "https://www.example.com/images/onion1.jpg",
+               "https://www.example.com/images/onion2.jpg"
+            ],
+            "description" : "Fresh fruits from the farm",
+            "stock" : 200,
+            "unit" : "1dozen"
+
+    },
+     {
+       "name" : "urad dal",
+         "category" : "Groceries",
+            "price" : 120.0,
+            "image" : [
+               "https://www.example.com/images/onion1.jpg",
+               "https://www.example.com/images/onion2.jpg"
+            ],
+            "description" : "Fresh groceries ",
+            "stock" : 300,
+            "unit" : "1kg"
+
+    }
+]
