@@ -3,18 +3,18 @@ import User from "../models/User.js";
 import jwt from "jsonwebtoken";
 
 export const userAuth = async (req, res, next) => {
-    const { token } = req.cookies;
-//console.log(token);
+    // Check cookie first, then Authorization header (for cross-origin deployments)
+    let token = req.cookies.token;
+    if (!token && req.headers.authorization && req.headers.authorization.startsWith("Bearer ")) {
+        token = req.headers.authorization.split(" ")[1];
+    }
+
     if (!token) {
         return next(new HandleError("Please login to access this resource", 401));
     }
-   const decodedData = jwt.verify(token, process.env.JWT_SECRET);
-  // console.log(decodedData);
-    req.user = await User.findById (decodedData.id);
+    const decodedData = jwt.verify(token, process.env.JWT_SECRET);
+    req.user = await User.findById(decodedData.id);
     next();
-
-
-
 }
 // Authorization for roles
 // eg : [ "admin", "user", "moderator","superadmin"] ]
