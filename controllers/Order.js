@@ -39,12 +39,9 @@ export const createNewOrder = async (req,res)=>{
   export const getMyOrders = async(req,res,next)=>{
     const orders = await Order.find({user: req.user._id});
    // console.log(orders);
-    if(!orders || orders.length === 0){
-        return next(new handleError("No orders found for this user", 404));
-    }
     res.status(200).json({
         success:true,
-        orders,
+        orders: orders || [],
     })
   }
   // get all orders -- admin
